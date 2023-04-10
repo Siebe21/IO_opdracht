@@ -19,12 +19,17 @@
           <div class="form-group col-md-4">
             <label for="inputVoornaam">Voornaam</label>
             <input type="text" class="form-control" id="inputVoornaam" placeholder="Voornaam" required >
+          </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4">naam</label>
             <input type="text" class="form-control" id="inputnaam" placeholder="naam" required>
           </div>
         </div>
         <div class="form-row ml-1">
+        <div class="form-row col-md-8">
+          <label for="inputAddress">E-mailadress</label>
+          <input type="text" class="form-control" id="inputemail" placeholder="mail@example.be" required>
+        </div>
         <div class="form-row col-md-8">
           <label for="inputAddress">GebruikersNaam</label>
           <input type="text" class="form-control" id="inputGebruikersNaam" placeholder="u922139" required>
@@ -49,39 +54,22 @@
           </div>
         </div>
       </div>
-      <div class="form-row col-md-3  ">
-        <label for="inputLand">Land</label>
-        <select id="inputLand" class="form-control" required>
-          <option selected>Kies een land</option>
-          <option>Belgie</option>
-          <option>Nederland</option>
-          <option>Duitsland</option>
-        </select>
-        
+      <div class="form-row col-md-6">
+        <label for="inputZip">land</label>
+        <input type="text" class="form-control" id="inputAdress" placeholder="" required>
+      </div>
 
       </div>
-      <div class="form-group col-md-3  ">
-        <label for="inputProvincie">Provincie</label>
-        <select id="inputProvincie" class="form-control" required>
-          <option selected>Kies een Provincie</option>
-          <option>Namen</option>
-          <option>Luik</option>
-          <option>Antwerpen</option>
-          <option>Gent</option>
-        </select>
-        
+      <div class="form-row col-md-6">
+        <label for="inputZip">provincie</label>
+        <input type="text" class="form-control" id="inputProvincie" placeholder="" required>
+      </div>
       </div>
     </div>
-    <div class="form-group col-md-3  ">
-      <label for="inputPostcode">postcode</label>
-      <select id="inputPostcode" class="form-control" required> 
-        <option selected></option>
-        <option>3540</option>
-        <option>5460</option>
-        <option>5201</option>
-        <option>6430</option>
-      </select>
-      
+    <div class="form-row col-md-6">
+      <label for="inputZip">postcode</label>
+      <input type="text" class="form-control" id="inputpr" placeholder="" required>
+    </div>
     </div>
         
       </form>
@@ -96,7 +84,7 @@
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+    <input class="form-check-input" type="checkbox" id="gridCheck1" required>
     <label class="form-check-label" for="gridCheck">
       Ik ga akkoord met de algemene voorwaarden.
     </label>
@@ -106,39 +94,37 @@
   </div>
   <div class="col-xs-4  "><h1>Betaling</h1>
 
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="BankingappRadios" id="exampleRadios1" value="option1" checked>
-      <label class="form-check-label" for="BankingappRadios">
+    <div class="form-check" id="checkbox">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
         Banking app
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="OverschrijvingRadios" id="exampleRadios2" value="option2">
-      <label class="form-check-label" for="OverschrijvingRadios">
-        Overschrijving
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
+        Overschrijving 
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="VisaCardRadios" id="exampleRadios3" value="option3" >
-      <label class="form-check-label" for="VisaCardRadios">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
         Visa Card
       </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="PayPALRadios" id="exampleRadios4" value="option4" >
-      <label class="form-check-label" for="PayPalRadios">
-        PayPal
-      </label>
-    </div>
-  </div>
-  
 </div>
-
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+    Paypal 
+  </label>
 
 
 <hr>
-<button type="submit" class="btn btn-primary ">Send</button>
+<button type="submit" class="btn btn-primary" id="send">Send</button>
+
+<div id="errorresult"></div>
 </form>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
